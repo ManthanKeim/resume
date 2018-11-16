@@ -2,7 +2,7 @@ Manthan Keim
 ============
 
 -------------------     ----------------------------
-1 MyAddress                        email@example.com
+1 MyAddress                        keimmanthan@gmail.com
 MyTown 1000                          @twitter_handle
 MyCountry                           1800 my-phone-nr
 -------------------     ----------------------------
