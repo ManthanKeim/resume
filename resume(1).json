@@ -1,0 +1,140 @@
+{
+  "selectedTemplate": 1,
+  "headings": {
+    "work": "Work Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "education": "Education",
+    "awards": "Open Source Contribution "
+  },
+  "basics": {
+    "name": "Manthan Keim",
+    "email": "keimmanthan@gmail.com",
+    "phone": "+91-7011692899",
+    "location": {
+      "address": "Jankpuri, New Delhi"
+    }
+  },
+  "education": [
+    {
+      "institution": "St. Mary's School",
+      "location": "Dwarka, New Delhi",
+      "area": "Science",
+      "startDate": "2014",
+      "endDate": "2015",
+      "studyType": "Matriculation",
+      "gpa": "7.8"
+    },
+    {
+      "institution": "St. Mary's School",
+      "location": "Dwarka, New Delhi",
+      "studyType": "Intermediate",
+      "area": "Science",
+      "gpa": "9.2",
+      "startDate": "2015",
+      "endDate": "2017"
+    },
+    {
+      "institution": "Maharaja Agrasen Institute of Technology",
+      "location": "Rohini, New Delhi",
+      "studyType": "B.Tech",
+      "area": "Computer Science",
+      "startDate": "2017",
+      "endDate": "2021"
+    }
+  ],
+  "work": [
+    {
+      "location": "New Delhi",
+      "position": "AI Rockstar",
+      "website": "",
+      "highlights": [
+        "Connecting",
+        "Developing"
+      ],
+      "company": "Microsoft",
+      "startDate": "April 2018",
+      "endDate": "Jan 2019"
+    },
+    {
+      "highlights": [
+        "Represent State",
+        "Developing"
+      ],
+      "company": "Dell",
+      "position": "Dell Campassador",
+      "location": "New Delhi",
+      "startDate": "2018",
+      "endDate": "2019"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "C++",
+        "Python",
+        "React"
+      ],
+      "name": "Programming Languages"
+    },
+    {
+      "keywords": [
+        "Windows",
+        "Linux",
+        "Mac"
+      ],
+      "name": "Platforms"
+    },
+    {
+      "keywords": [
+        "Machine Learning ",
+        "Blockchain ( Learning )"
+      ],
+      "name": "Technologies"
+    }
+  ],
+  "projects": [
+    {
+      "description": "UI based downloader using frameworks like Pyqt,Peewee etc.",
+      "keywords": [
+        "Python"
+      ],
+      "name": "Downloader using Python",
+      "url": "https://github.com/ManthanKeim/Qt-Modules"
+    },
+    {
+      "keywords": [
+        "peewee, flask"
+      ],
+      "name": "Chatbot",
+      "description": "A chatbot for facebook page",
+      "url": "https://github.com/ManthanKeim/chatbot"
+    },
+    {
+      "keywords": [
+        "Flask, opencv"
+      ],
+      "name": "Face and eyes detector",
+      "description": "Real time detection of face and eyes using Haar cascade model.",
+      "url": "https://github.com/ManthanKeim/face-detector"
+    }
+  ],
+  "awards": [
+    {
+      "date": "2018",
+      "title": "Coala",
+      "awarder": "Coala, Documentation",
+      "summary": "Analyse the errors and make UI more powerful."
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}
