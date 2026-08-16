@@ -1,38 +1,33 @@
-# resume
+# Manthan Keim — Resume (LaTeX)
 
-LaTeX resume source — edited in **Overleaf**, synced to GitHub.
+Resume source built with [Awesome CV](https://github.com/posquit0/Awesome-CV). Compile with **XeLaTeX** in Overleaf.
 
-## Overleaf ↔ GitHub sync
+## Overleaf
 
-Your live resume is on Overleaf. Connect it to this repo once:
+1. Upload this folder to Overleaf, or sync via **GitHub → ManthanKeim/resume**
+2. Set main document to `cv.tex`
+3. Compiler: **XeLaTeX**
 
-1. Open your resume project in [Overleaf](https://www.overleaf.com)
-2. **Menu** (top left) → **GitHub** → **Link GitHub account** (if not linked)
-3. **Menu → GitHub → Push to GitHub**
-4. Repository: `ManthanKeim/resume`
-5. Choose **Push** (first time may ask to create/overwrite — use this repo)
+## GitHub sync
 
-After that, use **Pull from GitHub** / **Push to GitHub** in Overleaf whenever you edit.
+```text
+Menu → GitHub → Push to GitHub → ManthanKeim/resume
+```
 
 ## Update portfolio PDF
 
-After compiling in Overleaf:
+After compiling, download the PDF and replace `Manthan_Keim_Resume.pdf` in the [portfolio repo](https://github.com/ManthanKeim/manthankeim.github.io).
 
-1. **Download PDF**
-2. Replace `Manthan_Keim_Resume.pdf` in [manthankeim.github.io](https://github.com/ManthanKeim/manthankeim.github.io)
-3. Commit and push — your site resume link updates automatically
+## Structure
 
-## What recruiters see
+| File | Purpose |
+| --- | --- |
+| `cv.tex` | Main resume document |
+| `cv/experience.tex` | Work history |
+| `cv/education.tex` | Degrees |
+| `cv/skills.tex` | Technical skills |
+| `cv/personalproject.tex` | Selected projects |
+| `cv/certifications.tex` | Awards & leadership |
+| `.tex` | Cover letter template (customize per application) |
 
-- **Portfolio:** [manthankeim.com](https://manthankeim.com) → Resume button
-- **GitHub profile:** link from [ManthanKeim/ManthanKeim](https://github.com/ManthanKeim/ManthanKeim)
-
-## Current role (keep resume aligned)
-
-- **Automation Engineer**, Zotec Partners, Carmel IN (~2024–Present)
-- **MS**, Purdue University (Technology Leadership & Innovation)
-- Targeting: software, platform, backend, data engineering roles
-
----
-
-*Legacy JSON resume from 2018 archived in `archive/` after Overleaf sync.*
+Last updated: August 2026.

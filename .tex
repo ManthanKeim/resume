@@ -1,0 +1,116 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-------------------------------------------------------------------------------
+% Filename:             "coverletter.tex"
+% Written by:           Andrew St. Pierre
+% Last modified:        Friday, August 10, 2018
+% Acknowledgements:     ""
+%-------------------------------------------------------------------------------
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.5cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-blue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Andrew}{St. Pierre}
+\position{Software Engineer}
+
+\mobile{(978) 727-5238}
+\email{astpier@purdue.edu}
+\homepage{asaintp.com}
+\gitlab{astpierre}
+\linkedin{andrewstpierre2}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\vspace{1.2mm}
+% How the letter is opened
+\letteropening{Google hiring team,}
+% How the letter is closed
+\letterclosing{Kind regards,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Andrew St. Pierre~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am a senior at Purdue University studying Computer Engineering. I am a hard-working and self-motivated individual, passionate about making a difference. I enjoy taking on challenging problems and working with a dynamic team to solve them.
+\lettersection{Why Google?}
+Google's emphasis on human-focused and philanthropic-driven solutions is one reason why I want to join the Google team. I would be proud to come into work every day knowing what I contribute will make the world a better place. 
+\lettersection{Why Me?}
+I am interested in working in the field of software engineering to broaden my skills and learn what I could potentially be passionate about. I believe I could bring a lot to the table because I am a self-starter type of worker. I always learn things that have not been taught in school during my free time, which is why I started the projects - building my own website. During the summer, I have spent most of my time learning HTML, CSS, Javascript, PHP, Arduino and Python which the school has not taught us. I had created a weather station using ESP8266, using jqeury to pull API data and get weather in any location that the user types, and utilize Google Analytics and Leaflet to show all my web visitors on OPENSTREETMAP. Besides that, I also utilized the free learning online classes-MIT COURSEWARE- and teach myself some algorithms,data structures and discrete math like induction, sorting, big O notation, AVL tree and etc. I learn best by experimenting with new technology and can self-teach with little guidance. These characteristics would make me a valuable worker.  I believe that this company would be a great place to start on the path of building a career in engineering.
+Due to the lack of learning resources when I was in high school, I had no experience in coding. After I graduated, I was given the chance to learn more about computers. I strongly believe that experience is very vital that's why I am actively seeking for summer internship that will provide me my first experience working as a software engineer. Applying to DMAI will provide me the path to being a successful engineer in the future.
+
+
+I am a Junior at Purdue University studying Computer Engineering. I am a hard-working and self-motivated individual, passionate about making a difference. I enjoy taking on challenging problems and working with a dynamic team to solve them. During the summer, I have spent most of my time learning HTML, CSS, Javascript, PHP, Arduino and Python which the school has not taught me. I believe that this company would be a great place to start on the path of building a career in engineering.
+
+
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}

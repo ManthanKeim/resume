@@ -1,0 +1,43 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-------------------------------------------------------------------------------
+% Manthan Keim — Resume (Awesome CV)
+% Compile with XeLaTeX in Overleaf or locally
+%-------------------------------------------------------------------------------
+
+\documentclass[11pt, letterpaper]{awesome-cv}
+\geometry{left=1.2cm, top=1.0cm, right=1.2cm, bottom=1.2cm, footskip=.5cm}
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-blue}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+% Personal information
+%-------------------------------------------------------------------------------
+\name{Manthan}{Keim}
+\position{Automation Engineer{\enskip\cdotp\enskip}Carmel, Indiana{\enskip\cdotp\enskip}Open to Software \& Data Engineering Roles}
+
+\mobile{+1 (832) 908-7421}
+\email{keimmanthan@gmail.com}
+\homepage{manthankeim.com}
+\github{manthankeim}
+\linkedin{manthankeim}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+\makecvheader
+
+\cvsection{Summary}
+\begin{cvparagraph}
+Automation Engineer with nearly two years building scripts, integrations, and file-transfer workflows in healthcare data environments. MS graduate from Purdue with research experience in NLP, data science, and open-source platforms. Seeking software, platform, backend, and data engineering roles where reliability, automation, and continuous learning matter.
+\end{cvparagraph}
+
+\input{cv/experience.tex}
+\input{cv/education.tex}
+\input{cv/skills.tex}
+\input{cv/personalproject.tex}
+\input{cv/certifications.tex}
+
+\end{document}
