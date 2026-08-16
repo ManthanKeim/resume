@@ -1,0 +1,40 @@
+name: Build resume PDF
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - '**.tex'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Find main TeX file
+        id: tex
+        run: |
+          if [ -f main.tex ]; then
+            echo "file=main.tex" >> "$GITHUB_OUTPUT"
+          elif [ -f resume.tex ]; then
+            echo "file=resume.tex" >> "$GITHUB_OUTPUT"
+          else
+            echo "No .tex file found — push from Overleaf first."
+            exit 0
+          fi
+
+      - name: Compile LaTeX
+        if: steps.tex.outputs.file != ''
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: ${{ steps.tex.outputs.file }}
+          args: -pdf -interaction=nonstopmode
+
+      - name: Upload PDF
+        if: steps.tex.outputs.file != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: Manthan_Keim_Resume
+          path: "*.pdf"
